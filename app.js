@@ -72,7 +72,7 @@ app.get("/consulta/nome2", function (req, res, next) {
   res.json(chave + " - " + conteudo + ", =>" + req.query.nome);
 });
 
-var server = app.listen(process.env.PORT || 5001, "localhost", function () {
+var server = app.listen(process.env.PORT || 5001, function () {
   var host = server.address().address;
   var port = server.address().port;
   console.log("Listening http://%s:%s", host, port);
